@@ -21,8 +21,8 @@ HERE = Path(__file__).parent
 FIG = HERE / "figures"
 OUT = HERE / "Dengue_Early_Warning_Report.pdf"
 
-STUDENT_NAME = "Isuru ____________"   # <-- fill in
-STUDENT_ID = "____________"           # <-- fill in
+STUDENT_NAME = "I.M. Wijesuriya"
+STUDENT_ID = "269222L"
 MODULE = "IT5514 – Applied Machine Learning (MSc in Artificial Intelligence)"
 GITHUB = "https://github.com/issa522/dengue-early-warning"
 
