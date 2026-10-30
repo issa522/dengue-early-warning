@@ -1,0 +1,12 @@
+model,CV AUC,CV AUC std,CV F1,cut-off,best params
+KNN,0.898,0.01,0.867,0.49,"{'n_neighbors': 16, 'p': 1, 'weights': 'distance'}"
+Random Forest,0.892,0.018,0.769,0.47,"{'class_weight': 'balanced_subsample', 'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 11, 'n_estimators': 689}"
+XGBoost,0.891,0.032,0.742,0.44,"{'colsample_bytree': 0.5176, 'learning_rate': 0.006, 'max_depth': 4, 'min_child_weight': 5, 'n_estimators': 387, 'reg_lambda': 1.7452, 'scale_pos_weight': 2.96, 'subsample': 0.6784}"
+Extra Trees,0.889,0.03,0.794,0.3,"{'class_weight': None, 'max_depth': 4, 'max_features': 0.3, 'min_samples_leaf': 12, 'n_estimators': 660}"
+LightGBM,0.883,0.026,0.759,0.39,"{'class_weight': 'balanced', 'colsample_bytree': 0.5274, 'learning_rate': 0.0105, 'min_child_samples': 25, 'n_estimators': 210, 'num_leaves': 13, 'reg_lambda': 2.5552, 'subsample': 0.5035, 'subsample_freq': 1}"
+Stacking,0.882,0.025,0.732,0.18,RF + XGBoost + CatBoost (tuned) → LogisticRegression
+CatBoost,0.882,0.021,0.743,0.43,"{'auto_class_weights': 'Balanced', 'depth': 6, 'iterations': 198, 'l2_leaf_reg': 7.4717, 'learning_rate': 0.0154}"
+Gradient Boosting,0.879,0.004,0.648,0.1,"{'learning_rate': 0.0316, 'max_depth': 2, 'min_samples_leaf': 6, 'n_estimators': 138, 'subsample': 0.9828}"
+Logistic Regression,0.865,0.028,0.812,0.22,"{'C': 0.2796, 'class_weight': None}"
+AdaBoost,0.856,0.033,0.69,0.36,"{'estimator__max_depth': 1, 'learning_rate': 0.0124, 'n_estimators': 356}"
+Decision Tree,0.759,0.071,0.61,0.29,"{'class_weight': None, 'max_depth': 3, 'min_samples_leaf': 6}"
